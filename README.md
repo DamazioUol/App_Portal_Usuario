@@ -1,5 +1,41 @@
 # AppPortalUsuario
 
+Desenvolvida como fronted para aplicação em .NET API_Portal_Usuario.
+
+Esta aplicação apresenta a lista de usuarios com filtro de pesquisa e as funcionalidade de gerenciamento como cadastrar, alterar e excluir usuário.
+O Material UI foi utilizado na construção do layout.
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+    
+
+Angular CLI: 14.2.5
+Node: 16.16.0
+Package Manager: npm 8.14.0
+OS: win32 x64
+
+Angular: 14.2.5
+... animations, cli, common, compiler, compiler-cli, core, forms
+... platform-browser, platform-browser-dynamic, router
+
+Package                            Version
+------------------------------------------------------------
+@angular-devkit/architect          0.1402.5
+@angular-devkit/build-angular      14.2.5
+@angular-devkit/core               14.2.5
+@angular-devkit/schematics         14.2.5
+@angular/cdk                       14.2.4
+@angular/material                  14.2.4
+@angular/material-moment-adapter   14.2.4
+@schematics/angular                14.2.5
+rxjs                               7.5.7
+typescript                         4.7.4
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
 
 ## Development server
