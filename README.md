@@ -5,14 +5,6 @@ Desenvolvida como fronted para aplicação em .NET API_Portal_Usuario.
 Esta aplicação apresenta a lista de usuarios com filtro de pesquisa e as funcionalidade de gerenciamento como cadastrar, alterar e excluir usuário.
 O Material UI foi utilizado na construção do layout.
 
-     _                      _                 ____ _     ___
-    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
-   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
-  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
- /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
-                |___/
-    
-
 Angular CLI: 14.2.5
 Node: 16.16.0
 Package Manager: npm 8.14.0
