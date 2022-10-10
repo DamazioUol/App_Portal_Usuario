@@ -1,0 +1,26 @@
+.formularioUsuario {
+    display: grid;
+}
+
+.formularioUsuario>* {
+    margin-bottom: 15px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+mat-card {
+    margin: 15px;
+}
+
+mat-spinner {
+    margin-top: 100px;
+}
+
+.botoes-formulario {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

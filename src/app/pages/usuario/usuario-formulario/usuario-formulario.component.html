@@ -1,0 +1,59 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>Portal Usuário</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="content">
+    <mat-spinner *ngIf="carregandoUsuario; else formulario" colo="accent"></mat-spinner>
+    <ng-template #formulario>
+        <mat-card>
+            <div class="formularioUsuario" [formGroup]="formularioUsuario">
+                <mat-form-field appearance="fill">
+                    <mat-label>Nome</mat-label>
+                    <input matInput placeholder="Nome" formControlName="nome" maxlength="20" autocomplete="off">
+                    <mat-error>Nome inválido!</mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Sobrenome</mat-label>
+                    <input matInput placeholder="Sobrenome" formControlName="sobrenome" maxlength="20"
+                        autocomplete="off">
+                    <mat-error>Sobrenome inválido!</mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Email" formControlName="email" (keyup)="validarEmail($event)">
+                    <mat-error>Email inválido!</mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Data Nascimento</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="dataNascimento"
+                        (keyup)="validarDataNascimento($event)" (ngModelChange)="validarDataNascimento($event)">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                    <mat-error>{{obterErroDataNascimento()}}</mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" color="primary">
+                    <mat-label>Escolaridade</mat-label>
+                    <mat-select formControlName="escolaridade">
+                        <mat-option *ngFor="let esc of listaEscolaridade" [value]="esc.valor">{{esc.texto}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <div class="botoes-formulario">
+                    <button mat-raised-button color="warn" (click)="location.back()">
+                        Voltar
+                    </button>
+                    <button mat-raised-button color="primary" (click)="operacao()">
+                        {{textoBotao}}
+                    </button>
+                </div>
+            </div>
+        </mat-card>
+    </ng-template>
+</div>
